@@ -1,0 +1,5 @@
+SELECT *,MAX(BillingCountry) AS MAKS FROM Invoice i 
+GROUP BY BillingCountry ORDER BY MAKS DESC
+
+SELECT *,MIN(BillingCountry) AS Minimal FROM Invoice i 
+GROUP BY BillingCountry ORDER BY Minimal ASC
